@@ -1,0 +1,11 @@
+@startuml
+class User {
+  - id: int
+  - name: String
+  + login(): boolean
+}
+class Admin {
+  + manageUsers(): void
+}
+User <|-- Admin
+@enduml
